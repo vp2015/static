@@ -1,0 +1,20 @@
+
+form {
+	legend {
+		margin-bottom:0.6em;
+		@include core-27;
+	}
+
+	input[type="checkbox"],
+	input[type="radio"] {
+		margin-right: 0.25em;
+		vertical-align: 2px;
+	}
+
+	label {
+		display:block;
+		width: auto;
+		float: none;
+		text-align: left;
+	}
+}
