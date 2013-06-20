@@ -49,7 +49,7 @@
 
 .button,
 .button.medium {
-  padding: 0.3em 0.6em 0.2em 0.6em;
+  padding: 0.4em 0.6em 0.2em 0.6em;
 }
 
 .button.medium {
@@ -59,9 +59,9 @@
 .get-started .button,
 .button,
 .button:visited {
-  background-color: $green;
+  background-color: #0FA660; //$green;
   color: #fff;
-  @include border-radius(3px);
+  //@include border-radius(3px);
   -webkit-box-shadow: 0 3px 0 #000;
   -moz-box-shadow: 0 3px 0 #000;
   box-shadow: 0 3px 0 #000;
@@ -75,7 +75,7 @@
 .button:active,
 .button:focus,
 .button-active{
-  background-color: $green-50;
+  background-color: lighten(#0FA660, 5); //$green-50;
 
   /* IE6 & 7 ignore the :focus psuedo-class so we need to overwrite the default */
   @include ie-lte(7) {
@@ -87,7 +87,7 @@
 .get-started .button-hover,
 .button:hover,
 .button-hover {
-  background-color: $green-50;
+  background-color: lighten(#0FA660, 5); // $green-50;
   color: #fff;
 }
 

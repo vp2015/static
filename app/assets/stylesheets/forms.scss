@@ -1,8 +1,13 @@
 
-form {
-	legend {
-		margin-bottom:0.6em;
-		@include core-27;
+form.survey {
+	padding-bottom:6em;
+
+	legend span {
+		display: block;
+		padding-bottom:0.5em;
+		@include core-24;
+		font-weight:600;
+		max-width: 22em;
 	}
 
 	input[type="checkbox"],
@@ -16,5 +21,18 @@ form {
 		width: auto;
 		float: none;
 		text-align: left;
+	}
+
+	fieldset {
+		display: block;
+		margin-bottom: 2em;
+	}
+
+	textarea {
+		width: 100%;
+	}
+
+	button {
+		margin-top:1.5em;
 	}
 }
