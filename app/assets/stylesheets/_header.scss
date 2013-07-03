@@ -37,7 +37,7 @@
         }
       }
       .header-logo {
-        margin: 5px 0 2px;
+        margin: 4px 0 3px;
       }
       .site-search {
         float: right;
@@ -78,24 +78,46 @@
     position: relative;
     width: 166px;
     height: 30px;
+    line-height: 30px;
     overflow: hidden;
-
+    vertical-align: baseline;
+    text-decoration: none;
+    
     img {
-      position: absolute;
-      left: -166px;
-      top: 0;
-      border: none;
-
-      /* scale oversized image to container bounds */
-      width: 200%;
-      height: 300%;
-
-      @include ie(6){
-        left: 0;
+      height: 31px;
+      padding-right: 0.5em;
+      width: auto;
+      float: left;
+      display: inline;
+      line-height: inherit;
+    }
+    
+    span {
+      color: white;
+      font-weight: bold;
+      font-size: 26px;
+      float: left;
+      display: inline;
+      line-height: inherit;
+      position: relative;
+      top: 0.1em;
+    }
+    
+    span + span {
+      margin-left: -0.075em;
+    }
+    
+    &:hover,
+    &:focus {
+      span {
+        text-decoration: underline;
       }
     }
-    &:hover img {
-      top: -30px;
+    
+    &:active {
+      span {
+        color: $light-blue;
+      }
     }
   }
 
