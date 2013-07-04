@@ -37,7 +37,7 @@
         }
       }
       .header-logo {
-        margin: 4px 0 3px;
+        margin: 5px 0 2px;
       }
       .site-search {
         float: right;
@@ -76,48 +76,50 @@
   #logo {
     float: left;
     position: relative;
+    top: 1px;
+
     width: 166px;
     height: 30px;
-    line-height: 30px;
-    overflow: hidden;
+    overflow: visible;
     vertical-align: baseline;
+
+    color: $white;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.25em;
     text-decoration: none;
-    
+
     img {
-      height: 31px;
-      padding-right: 0.5em;
-      width: auto;
-      float: left;
-      display: inline;
-      line-height: inherit;
-    }
-    
-    span {
-      color: white;
-      font-weight: bold;
-      font-size: 26px;
-      float: left;
-      display: inline;
-      line-height: inherit;
       position: relative;
-      top: 0.1em;
+      top: -3px;
+
+      width: auto;
+      height: 31px;
+
+      padding-right: 2px;
+
+      float: left;
+      display: inline;
+      line-height: inherit;
     }
-    
-    span + span {
-      margin-left: -0.075em;
+
+    span>span {
+      padding: 0 1px 0 2px;
     }
-    
+
     &:hover,
     &:focus {
       span {
         text-decoration: underline;
       }
-    }
-    
-    &:active {
-      span {
-        color: $light-blue;
+
+      img {
+        text-decoration: none;
       }
+    }
+
+    &:active {
+      color: $light-blue;
     }
   }
 
