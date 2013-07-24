@@ -2,7 +2,6 @@
 
 #footer {
   background-color: $grey-8;
-  border-top: 1px solid $grey-6;
 
   .footer-wrapper {
     max-width: 60em;
@@ -41,7 +40,7 @@
     font-size: 0;
     float: left;
 
-    padding: 0 0 60px 0;
+    padding: 0 0 45px 0;
 
     width: 100%;
 
@@ -68,12 +67,7 @@
       @include core-16;
       list-style: none;
 
-      border: 1px solid $grey-6;
-      border-width: 1px 0 0 0;
-
-      margin: 20px 0 0 0;
-
-      padding: 20px 0 0 0;
+      padding: 0;
 
       min-height: 210px;
 
@@ -186,7 +180,7 @@
     .footer-meta-inner {
       display: inline-block;
       vertical-align: bottom;
-      width: 75%;
+      width: 66%;
 
       @include media-down(mobile) {
         display: block;
@@ -252,8 +246,6 @@
           padding-top: 0.1em;
 
           a {
-            @include core-14;
-
             @include media-down(mobile) {
               font-size: 1em;
             }
@@ -274,8 +266,8 @@
       display: inline-block;
       float: none;
       text-align: inherit;
-      width: 25%;
-      padding-top: 15px;
+      width: 33.333%;
+      padding-top: 30px;
 
       @include ie-lte(7) {
         display: block;
@@ -289,8 +281,7 @@
 
         padding: 115px 0 0 0;
 
-        background: transparent image-url("govuk-crest.png") no-repeat 100% 0;
-        text-align: right;
+        background: transparent image-url("govuk-crest.png") no-repeat 0 0;
         text-decoration: none;
 
         @include ie(6) {
