@@ -165,13 +165,11 @@
     clear: both;
     font-size: 0;
     color: $grey-3;
+    border-top: 1px solid $grey-6;
+    
+    margin: 0;
 
-    border: 1px solid $grey-6;
-    border-width: 1px 0 0 0;
-
-    margin: 60px 0 0 0;
-
-    padding: 30px 0 60px;
+    padding: 15px 0 60px;
 
     @include media-down(mobile) {
       margin: 0;
@@ -180,7 +178,8 @@
     .footer-meta-inner {
       display: inline-block;
       vertical-align: bottom;
-      width: 66%;
+      width: 62%;
+      margin-left: 3%;
 
       @include media-down(mobile) {
         display: block;
@@ -197,6 +196,11 @@
         li {
           display: inline-block;
           margin: 0 15px 0 0;
+          
+          &.built-by {
+            display: block;
+            padding-top: 15px;
+          }
 
           @include ie-lte(7) {
             display: inline;
@@ -208,6 +212,11 @@
         @include media-down(mobile) {
           width: auto;
           margin: 0 0 1.5em 0;
+          
+          &.built-by {
+            display: inline-block;
+            padding-top: 0;
+          }
         }
       }
 
@@ -266,7 +275,7 @@
       display: inline-block;
       float: none;
       text-align: inherit;
-      width: 33.333%;
+      width: 31%;
       padding-top: 30px;
 
       @include ie-lte(7) {
