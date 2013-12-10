@@ -7,11 +7,6 @@ module NotificationHelper
     node_replacement_notification(NotificationFileLookup.instance.banner, "banner")
   end
 
-  # Only used to replace homepage campaigns for urgent matters.
-  def campaign_replacement_notification
-    node_replacement_notification(NotificationFileLookup.instance.campaign, "campaign")
-  end
-
   private
 
   def node_replacement_notification(node, type)
