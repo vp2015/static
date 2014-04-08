@@ -22,6 +22,7 @@ src_files:
   - app/assets/javascripts/analytics/tracking-strategies.js
   - app/assets/javascripts/analytics/events-cookie-handler.js
   - app/assets/javascripts/analytics/tracking.js
+  - app/assets/javascripts/track-external-links.js
 
 # stylesheets
 #
