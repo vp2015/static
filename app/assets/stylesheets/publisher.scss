@@ -222,6 +222,8 @@ aside .page-navigation {
 
     @include core-16($tabular-numbers: true);
 
+    padding: 0.25em 1em 0.25em 0;
+
     @include ie-lte(7) {
       list-style: none;
       margin-left: 0;
@@ -235,7 +237,7 @@ aside .page-navigation {
 
     a {
       @include inline-block;
-      padding: 0.25em 1em 0.25em 0;
+      vertical-align: top;
 
       @include ie-lte(7) {
         display: inline;
