@@ -220,7 +220,7 @@ aside .page-navigation {
     margin-left: 1.5em;
     clear: left;
 
-    @include core-16;
+    @include core-16($tabular-numbers: true);
 
     @include ie-lte(7) {
       list-style: none;
