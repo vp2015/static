@@ -42,7 +42,8 @@
   }
 
   input {
-    &[type="text"] {
+    &[type="text"],
+    &[type="textarea"] {
       display: block;
       @include core-19;
       margin: 0 0 1em 0;
@@ -54,6 +55,9 @@
       @include ie-lte(7) {
         width: 550px;
       }
+    }
+    &[type="textarea"] {
+      height: 5em;
     }
   }
 }
