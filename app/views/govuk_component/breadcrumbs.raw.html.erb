@@ -1,0 +1,8 @@
+<div class="govuk-breadcrumbs">
+  <ol role="breadcrumbs">
+    <li><a href="/">Home</a></li>
+  <% sections.each do |section| %>
+    <li><a href="<%= section[:url] %>"><%= section[:title] %></a></li>
+  <% end %>
+  </ol>
+</div>

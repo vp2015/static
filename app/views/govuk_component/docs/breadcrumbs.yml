@@ -1,0 +1,29 @@
+name: "Breadcrumbs"
+description: "Navigational breadcrumbs, showing section hierarchy"
+fixtures:
+  default:
+    sections:
+    - title: 'Section'
+      url: '/section'
+    - title: 'Sub-section'
+      url: '/section/sub-section'
+  no_sections:
+    sections: []
+  single_section:
+    sections:
+    - title: 'Section'
+      url: '/section'
+  many_sections:
+    sections:
+    - title: 'Section'
+      url: '/section'
+    - title: 'Sub-section'
+      url: '/section/sub-section'
+    - title: 'Sub Sub-section'
+      url: '/section/sub-section/sub-sub-section'
+  real:
+    sections:
+    - title: 'Passports, travel and living abroad'
+      url: '/browse/abroad'
+    - title: 'Travel abroad'
+      url: '/browse/abroad/travel-abroad'
