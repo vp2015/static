@@ -1,0 +1,29 @@
+name: "Related items"
+description: "A short description of the Related items component"
+fixtures:
+  default:
+    sections:
+    - title: 'Travel Abroad'
+      url: '/'
+      items:
+      - title: 'Link A'
+        url: /
+      - title: 'Link B'
+        url: /
+    - title: 'Travel'
+      items:
+      - title: 'Link 1'
+        url: /
+      - title: 'Link 2'
+        url: /
+  real_example:
+    # from https://www.gov.uk/register-birth
+    sections:
+    - title: Pregnancy and birth
+      url: /browse/childcare-parenting/pregnancy-birth
+      items:
+      - title: 'Register a birth'
+        url: /register-birth
+    - items:
+      - title: Check if you're a British citizen
+        url: /check-british-citizen
