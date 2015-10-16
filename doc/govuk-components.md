@@ -53,6 +53,10 @@ _Note_: For consistency with other components, and Rails convention, you should 
 * `id`: The underscore version of the component name, this is what an app calling the component would use
 * `name`: The human name. eg, `Your Example Component`
 * `description`: A longer form description of what the component does, when it should be used
+* `preview`: Describes how the preview the component.
+ * `render` (default): as the component would appear in an app
+ * `markup`: show the HMTL for the component inline (eg, for `<meta>` tag and non-rendered content)
+ * `page`: component on separate page (eg, where there may be unique IDs repeated)
 * `fixtures`: TBD: For components that expect arguments this will be a hash of fixtured example arguments
 
 Adding it to the documentation will allow you to preview it in the `govuk_component_guide`, which can be pointed to any
