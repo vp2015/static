@@ -1,0 +1,15 @@
+name: "Description"
+description: "A short description of the Description component"
+body: |
+  A long form description of the Description component, which may
+  include markdown formatting.
+
+  It should try and descrive the intent of the component, and document
+  any parameters passed to the component.
+fixtures:
+  default:
+    description: "Nearly 400 homes are set to be built on the site of a former tar distillery thanks to Gleeson Homes and HCA investment."
+  short:
+    description: "Description of, thing."
+  long:
+    description: "Nearly 400 homes are set to be built on the site of a former tar distillery thanks to Gleeson Homes and HCA investment, Nearly 400 homes are set to be built on the site of a former tar distillery thanks to Gleeson Homes and HCA investment."

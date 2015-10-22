@@ -1,0 +1,8 @@
+.govuk-description {
+    @include core-24;
+    margin: $gutter-half 0;
+
+    @include media(tablet){
+      margin: ($gutter*1.5) 0;
+    }
+}
